@@ -1,0 +1,60 @@
+[
+	{
+		"cfg":
+			{
+                "prof": {
+                    "enable": 1,
+                    "output": "agn.log"
+                },
+                "appKey": "14255202120000cf",
+				"secretKey": "988aaf63008b6db30f38bd60be0c3534",
+				"provision": "data/aiengine.provision",
+                "deviceId": "64006a2a82d4",
+				"cloud": {
+                    "server": "ws://gray.cloud.chivox.com:8090 /",
+                    "back_server": "wss://cloud.chivox.com:443/",
+                    "serverList": ""
+				}
+			},
+		"items":[
+			{
+				"param":
+                    {
+						"coreProvideType": "cloud",
+                        "serialNumber": "1504060142000000",
+                        "vad": {
+                            "vadEnable": 1
+                        },
+						"app": {
+							"userId": "this-is-userid"
+						},
+						"audio": {
+							"audioType": "wav",
+                            "saveAudio": {
+                                "saveType": "wav",
+                                "saveDir": "D:/audio"
+                            },
+							"channel": 1,
+							"sampleBytes": 2,
+							"sampleRate": 16000
+						},
+						"request": {
+							"rank": 100,
+                            "attachAudioUrl": 1,
+                            "coreType": "en.word.score",
+                            "refText": "hello.",
+                            "relaxation_factor": 0,
+                            "result": {
+                                "use_details": 1,
+                                "details": {
+                                    "oovscore": 1
+                                }
+                            }
+						}
+					},
+
+				"audio_path": "data/want.wav"
+			}
+		]
+	}
+]
